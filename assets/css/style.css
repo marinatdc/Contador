@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+:root {
+    --primary: #4f772d;
+    --primary-darker: #344e41;
+    --white: #dad7cd;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+    font-family: 'Oswald';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+.container {
+    background-color: var(--white);
+
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.281);
+}
+
+.container > h1 {
+    font-weight: 500;
+    font-size: 30px;
+
+    margin: 5px 0px 10px 0px;
+
+    color: var(--primary-darker);
+}
+
+.relogio {
+    font-size: 40px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 10px;      
+}
+
+.buttons > button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    padding: 1px 10px;
+
+    background-color: #344e41;
+    color: #dad7cd;
+
+    gap: 2px;
+    font-size: medium;
+}
+
+.buttons > button:hover {
+    background-color: gray;
+}
+
+.buttons > button:active {
+    background-color: rgb(66, 66, 66);
+}
+
+.buttons > .pausar {
+    background-color: #ee9b00;
+}
+
+.buttons > .zerar {
+    background-color: #ae2012;
+}
+
+.pausado {
+    color: #ae2012;
+}
